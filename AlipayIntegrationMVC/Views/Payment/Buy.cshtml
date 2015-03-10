@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "Buy";
+    Layout = "~/Views/_layoutCMS.cshtml";
+}
+
+<script type="text/javascript">
+    function SelectBank(n) {
+        $('$bank' + n).checked = true;
+    }
+</script>
+
+<h1>支付宝支付1分钱测试</h1>
+
+@using (Html.BeginForm("SubmitAlipay", "Payment", FormMethod.Post, new { @class = "form-horizontal", id = "profile-form" }))
+{
+    <div class="row">
+        <label class="col-sm-1 no-padding-right">单价</label>
+        <label class="col-sm-3"> ￥0.01 </label>
+        <label class="col-sm-1 no-padding-right">数量</label>
+        <label class="col-sm-3"> <input id="qty" name="qty" value="1" /> </label>
+        <label class="col-sm-1 no-padding-right">总金额</label>
+        <label class="col-sm-3"> ￥0.01 </label>
+    </div>
+    <div class="row col-xs-12">
+        <h4 class="header blue smaller">
+            请选择支付方式
+        </h4>
+        <ul class="alipay_content">
+            <li>
+                <input type="radio" name="pay_bank" value="directPay" checked="checked" id="bank0" />&nbsp;<img src="/assets/images/alipay.gif" onclick="javascript:SelectBank(0);" class="alipay" alt="支付宝" />
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <ul class="alipay_content">
+            <li>
+                <input type="radio" name="pay_bank" value="ICBCB2C" id="bank1" />&nbsp;<span onclick="javascript:SelectBank(1);" class="icon ICBC"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="CMB" id="bank2" />&nbsp;<span onclick="javascript:SelectBank(2);" class="icon CMB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="CCB" id="bank3" />&nbsp;<span onclick="javascript:SelectBank(3);" class="icon CCB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="BOCB2C" id="bank4" />&nbsp;<span onclick="javascript:SelectBank(4);" class="icon BOC"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="ABC" id="bank5" />&nbsp;<span onclick="javascript:SelectBank(5);" class="icon ABC"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="COMM" id="bank6" />&nbsp;<span onclick="javascript:SelectBank(6);" class="icon COMM"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="PSBC-DEBIT" id="bank7" />&nbsp;<span onclick="javascript:SelectBank(7);" class="icon PSBC"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="CEBBANK" id="bank8" />&nbsp;<span onclick="javascript:SelectBank(8);" class="icon CEB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="SPDB" id="bank9" />&nbsp;<span onclick="javascript:SelectBank(9);" class="icon SPDB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="GDB" id="bank10" />&nbsp;<span onclick="javascript:SelectBank(10);" class="icon GDB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="CITIC" id="bank11" />&nbsp;<span onclick="javascript:SelectBank(11);" class="icon CITIC"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="CIB" id="bank12" />&nbsp;<span onclick="javascript:SelectBank(12);" class="icon CIB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="SDB" id="bank13" />&nbsp;<span onclick="javascript:SelectBank(13);" class="icon SDB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="CMBC" id="bank14" />&nbsp;<span onclick="javascript:SelectBank(14);" class="icon CMBC"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="BJBANK" id="bank15" />&nbsp;<span onclick="javascript:SelectBank(15);" class="icon BJBANK"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="HZCBB2C" id="bank16" />&nbsp;<span onclick="javascript:SelectBank(16);" class="icon HZCB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="SHBANK" id="bank17" />&nbsp;<span onclick="javascript:SelectBank(17);" class="icon SHBANK"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="BJRCB" id="bank18" />&nbsp;<span onclick="javascript:SelectBank(18);" class="icon BJRCB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="SPABANK" id="bank19" />&nbsp;<span onclick="javascript:SelectBank(19);" class="icon SPABANK"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="FDB" id="bank20" />&nbsp;<span onclick="javascript:SelectBank(20);" class="icon FDB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="WZCBB2C-DEBIT" id="bank21" />&nbsp;<span onclick="javascript:SelectBank(21);" class="icon WZCB"></span>
+            </li>
+            <li>
+                <input type="radio" name="pay_bank" value="NBBANK" id="bank22" />&nbsp;<span onclick="javascript:SelectBank(22);" class="icon NBBANK"></span>
+            </li>
+        </ul>
+        <hr class="clearboth">
+
+    </div>
+    <div class="clearfix"></div>
+    <button class="btn btn-success">
+        <i class="ace-icon fa fa-save icon-on-left"></i>
+        开始充值
+    </button>
+}

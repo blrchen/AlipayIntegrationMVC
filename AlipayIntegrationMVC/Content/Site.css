@@ -1,0 +1,123 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+.alipay_content {
+}
+
+    .alipay_content li {
+        float: left;
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    .alipay_content li input {
+        float: left;
+        margin: 10px 0 0 10px;
+    }
+    .alipay_content li img{
+        vertical-align: middle;
+    }
+
+.icon{
+    background-image: url(/assets/images/bankicon.png);
+    display:inline-block;
+    height: 30px;
+    width:120px;
+    background-repeat: no-repeat;
+    border:1px solid gray;
+	cursor: pointer;
+}
+.icon:hover
+{
+	border: 1px solid red;
+}
+.ICBC{    
+    background-position: 0 -40px;
+}
+.CMB {
+    background-position: 0 -80px;
+}
+.CCB{
+    background-position: 0 -320px;
+}
+.BOC{
+    background-position: 0 -520px;
+}
+.ABC{
+    background-position: 0 -480px;
+}
+.COMM{
+    background-position: 0 -600px;
+}
+.PSBC {
+    background-position: 0 -400px;
+}
+.CEB {
+    background-position: 0 -440px;
+}
+.SPDB {
+    background-position: 0 -360px;
+}
+.GDB {
+    background-position: 0 -280px;
+}
+.CITIC {
+    background-position: 0 -200px;
+}
+.CIB {
+    background-position: 0 -3365px;
+}
+.SDB {
+    background-position: 0 -240px;
+}
+.CMBC {
+    background-position: 0 -120px;
+}
+.HZCB {
+    background-position: 0 -760px;
+}
+.SHBANK {
+    background-position: 0 -840px;
+}
+.BJRCB {
+    background-position: 0 -2640px;
+}
+.SPABANK {
+    background-position: 0 -1880px;
+}
+.FDB {
+    background-position: 0 -1320px;
+}
+.NBBANK {
+    background-position: 0 -1240px;
+}
+.BJBANK {
+    background-position: 0 -3240px;
+}
+.WZCB {
+    background-position: 0 -1720px;
+}

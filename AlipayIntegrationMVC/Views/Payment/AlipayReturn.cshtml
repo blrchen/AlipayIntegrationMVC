@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "AlipayReturn";
+    Layout = "~/Views/_layoutCMS.cshtml";
+}
+
+@model AlipayIntegrationMVC.ViewModels.AlipayReturnViewModel
+
+<h1 class="widget-title">支付结果</h1>
+
+<div>
+    @Model.message<br>
+    商户订单号: @Model.out_trade_no<br>
+    支付宝交易号 : @Model.trade_no<br>
+    交易状态 : @Model.trade_status
+</div>
